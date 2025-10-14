@@ -19,12 +19,35 @@ public class MineMapView : MonoBehaviour
         }
     }
 
+    [Serializable]
+    private struct BiomeTileSettings
+    {
+        public Tilemap Tilemap;
+        public RuleTile[] RuleTile;
+
+        public RuleTile GetTile(int idx) => RuleTile[idx];
+    }
+
     [SerializeField] private TileMapSettings _nodeTileMap;
-    //[SerializeField] private TileMapSettings _biomeTileMap;
+    [SerializeField] private BiomeTileSettings _biomeTileSettings;
     [SerializeField] private PathDrawer _pathDrawer;
 
     public void SetupBiomes(int[,] biomes)
     {
+        var tileMap = _biomeTileSettings.Tilemap;
+        var maxWidth = biomes.GetLength(0);
+        var maxDepth = biomes.GetLength(1);
+        
+        
+        for (var width = 0; width < maxWidth; width++)
+        {
+            for (var depth = 0; depth < maxDepth; depth++)
+            {
+                var position = new Vector3Int(width, depth);
+                var tile = _biomeTileSettings.GetTile(biomes[width, depth]);
+                tileMap.SetTile(position, tile);
+            }
+        }
     }
 
     public void SetupNodes(List<Node> nodes)
