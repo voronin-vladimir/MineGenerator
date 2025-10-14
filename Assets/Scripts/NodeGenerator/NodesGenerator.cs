@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using UnityEngine;
 using Utils;
 
@@ -31,16 +32,14 @@ namespace NodeGenerator
             var originNodePath = new List<Vector2Int>();
             var pathId = 0;
             Node lastNode = null;
-            
-            generationQueue.ToList().Sort();
-            
+
             for (var i = 0; i < depth; i++)
             {
                 var position = new Vector2Int(originPointX, i);
                 originNodePath.Add(position);
                 VisitCell(position);
 
-                if (i % 2 != 0)
+                if (i % 4 != 0)
                 {
                     continue;
                 }
@@ -48,15 +47,15 @@ namespace NodeGenerator
                 var node = CreateNode(position);
                 generationQueue.Enqueue(node);
 
-                if (i == 0)
+                if (lastNode != null)
                 {
-                    lastNode = node;
-                    continue;
+                    var pathCopy = new List<Vector2Int>(originNodePath);
+                    ConnectNodes(lastNode, node, pathCopy, ref pathId);
+                    pathId++;
                 }
 
-                ConnectNodes(node, lastNode, originNodePath, ref pathId);
-                pathId++;
-                
+                originNodePath.Clear();
+                originNodePath.Add(position);
                 lastNode = node;
             }
 
@@ -111,6 +110,7 @@ namespace NodeGenerator
             var distance = _distanceList.GetRandom();
             var path = new List<Vector2Int>();
             var currentPosition = originNode.Position;
+            path.Add(currentPosition);
 
             for (int i = 0; i < distance; i++)
             {
@@ -209,10 +209,13 @@ namespace NodeGenerator
             _visitedCellState.Set(pos, true);
         }
 
-        private static void ConnectNodes(Node first, Node second, List<Vector2Int> path, ref int pathId)
+        private void ConnectNodes(Node first, Node second, List<Vector2Int> path, ref int pathId)
         {
             first.Connect(second, path, pathId);
-            second.Connect(first, path, pathId);
+
+            var reversedPath = new List<Vector2Int>(path);
+            reversedPath.Reverse();
+            second.Connect(first, reversedPath, pathId);
         }
     }
 }

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using NodeGenerator;
-using TileMap;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -19,38 +19,9 @@ public class MineMapView : MonoBehaviour
         }
     }
 
-    [Serializable]
-    private struct RuleTileMapSettings
-    {
-        public Tilemap TargetTilemap;
-        public PathTile Tile;
-
-        public void SetTile(Vector2Int position, int roadId)
-        {
-            //Tile.SetPathId(roadId);
-            //TargetTilemap.SetTile((Vector3Int) position, Tile);
-        }
-
-        public void SetTiles(List<Vector2Int> tiles, bool ignoreLockFlags = false)
-        {
-            var tileChangeData = new List<TileChangeData>();
-
-            // foreach (var tile in tiles)
-            // {
-            //     tileChangeData.Add(new TileChangeData(
-            //         (Vector3Int) tile,
-            //         Tile,
-            //         Color.white,
-            //         Matrix4x4.identity));
-            // }
-
-            TargetTilemap.SetTiles(tileChangeData.ToArray(), ignoreLockFlags);
-        }
-    }
-
     [SerializeField] private TileMapSettings _nodeTileMap;
     //[SerializeField] private TileMapSettings _biomeTileMap;
-    [SerializeField] private RuleTileMapSettings _roadTileMap;
+    [SerializeField] private PathDrawer _pathDrawer;
 
     public void SetupBiomes(int[,] biomes)
     {
@@ -62,11 +33,15 @@ public class MineMapView : MonoBehaviour
         {
             var connections = node.Connections;
             SetNode(node);
-
             foreach (var connection in connections)
             {
-                _roadTileMap.SetTiles(connection.Path);
+                _pathDrawer.DrawPath(connection.Path);
             }
+        }
+
+        foreach (var node in nodes)
+        {
+            _pathDrawer.DrawTile(node.Position, node.Connections.Select(c => c.Path[1]));
         }
     }
 

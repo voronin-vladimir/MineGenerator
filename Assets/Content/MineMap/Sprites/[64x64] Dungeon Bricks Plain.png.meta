@@ -1,0 +1,398 @@
+fileFormatVersion: 2
+guid: c71aea3ad0d27ee41aecaaa7859d01de
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: '[64x64] Dungeon Bricks Plain_0'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d29fec5c60ad19418db51eda4e11496
+      internalID: 1400303064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[64x64] Dungeon Bricks Plain_1'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07e2fa20f311f4d42917183f1814a976
+      internalID: 2089679388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[64x64] Dungeon Bricks Plain_2'
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a43b887c68ba8e84d872939fd3a41218
+      internalID: 2068806680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[64x64] Dungeon Bricks Plain_8'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9f64505e5bd8a6409c91160739287a5
+      internalID: 759362766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[64x64] Dungeon Bricks Plain_9'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7793132bab3340469df0ad2fec80033
+      internalID: 1100257052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[64x64] Dungeon Bricks Plain_10'
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2e6c2b01bcedc946a9837fc53cbb88e
+      internalID: 270724245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[64x64] Dungeon Bricks Plain_16'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0ec81cfff0337b4c9a5d69a0f57ed66
+      internalID: 975134181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[64x64] Dungeon Bricks Plain_17'
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 555094eb87b9fe24ba64f6605a57b875
+      internalID: 2070793219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[64x64] Dungeon Bricks Plain_18'
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a21d8488721e114ead754e087caf2d8
+      internalID: 2121311511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      '[64x64] Dungeon Bricks Plain_0': 1400303064
+      '[64x64] Dungeon Bricks Plain_1': 2089679388
+      '[64x64] Dungeon Bricks Plain_10': 270724245
+      '[64x64] Dungeon Bricks Plain_11': -176430015
+      '[64x64] Dungeon Bricks Plain_12': -1838279189
+      '[64x64] Dungeon Bricks Plain_13': -2094457777
+      '[64x64] Dungeon Bricks Plain_14': -1008815091
+      '[64x64] Dungeon Bricks Plain_15': 1283380721
+      '[64x64] Dungeon Bricks Plain_16': 975134181
+      '[64x64] Dungeon Bricks Plain_17': 2070793219
+      '[64x64] Dungeon Bricks Plain_18': 2121311511
+      '[64x64] Dungeon Bricks Plain_19': 1815827198
+      '[64x64] Dungeon Bricks Plain_2': 2068806680
+      '[64x64] Dungeon Bricks Plain_20': -546870451
+      '[64x64] Dungeon Bricks Plain_21': 1922157028
+      '[64x64] Dungeon Bricks Plain_22': 1059463617
+      '[64x64] Dungeon Bricks Plain_23': 1215826013
+      '[64x64] Dungeon Bricks Plain_24': -773699088
+      '[64x64] Dungeon Bricks Plain_25': -1770298984
+      '[64x64] Dungeon Bricks Plain_26': -916961502
+      '[64x64] Dungeon Bricks Plain_27': 1645975793
+      '[64x64] Dungeon Bricks Plain_28': 659025558
+      '[64x64] Dungeon Bricks Plain_29': 1151424181
+      '[64x64] Dungeon Bricks Plain_3': 233652920
+      '[64x64] Dungeon Bricks Plain_30': -772829723
+      '[64x64] Dungeon Bricks Plain_31': -429241725
+      '[64x64] Dungeon Bricks Plain_32': -695817364
+      '[64x64] Dungeon Bricks Plain_33': 850283425
+      '[64x64] Dungeon Bricks Plain_34': -1609056618
+      '[64x64] Dungeon Bricks Plain_35': 1198202831
+      '[64x64] Dungeon Bricks Plain_36': 242091459
+      '[64x64] Dungeon Bricks Plain_37': 579554711
+      '[64x64] Dungeon Bricks Plain_38': -1150876580
+      '[64x64] Dungeon Bricks Plain_39': -1332686735
+      '[64x64] Dungeon Bricks Plain_4': 1155362400
+      '[64x64] Dungeon Bricks Plain_40': -1706697985
+      '[64x64] Dungeon Bricks Plain_41': 20894513
+      '[64x64] Dungeon Bricks Plain_42': -1507303509
+      '[64x64] Dungeon Bricks Plain_43': 1465456120
+      '[64x64] Dungeon Bricks Plain_44': -1893297483
+      '[64x64] Dungeon Bricks Plain_45': 232261891
+      '[64x64] Dungeon Bricks Plain_46': -886728530
+      '[64x64] Dungeon Bricks Plain_47': -366134430
+      '[64x64] Dungeon Bricks Plain_48': 68420183
+      '[64x64] Dungeon Bricks Plain_49': 591188732
+      '[64x64] Dungeon Bricks Plain_5': 505839921
+      '[64x64] Dungeon Bricks Plain_50': 77151673
+      '[64x64] Dungeon Bricks Plain_51': -2085708772
+      '[64x64] Dungeon Bricks Plain_52': 595647692
+      '[64x64] Dungeon Bricks Plain_53': -338899655
+      '[64x64] Dungeon Bricks Plain_54': 1324506927
+      '[64x64] Dungeon Bricks Plain_55': 272764287
+      '[64x64] Dungeon Bricks Plain_6': 860570907
+      '[64x64] Dungeon Bricks Plain_7': -593720423
+      '[64x64] Dungeon Bricks Plain_8': 759362766
+      '[64x64] Dungeon Bricks Plain_9': 1100257052
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

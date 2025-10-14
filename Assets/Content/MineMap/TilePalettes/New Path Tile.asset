@@ -12,20 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95253eb2621743b7a1cd44d1df471fc4, type: 3}
   m_Name: New Path Tile
   m_EditorClassIdentifier: 
-  sprites:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  _isolated: {fileID: 1259159755, guid: 74d52128551fd0447be26473b9407443, type: 3}
+  _end: {fileID: 563997029, guid: 74d52128551fd0447be26473b9407443, type: 3}
+  _straight: {fileID: -1629989013, guid: 74d52128551fd0447be26473b9407443, type: 3}
+  _corner: {fileID: 1889519527, guid: 74d52128551fd0447be26473b9407443, type: 3}
+  _tee: {fileID: -623065306, guid: 74d52128551fd0447be26473b9407443, type: 3}
+  _cross: {fileID: -387538670, guid: 74d52128551fd0447be26473b9407443, type: 3}
