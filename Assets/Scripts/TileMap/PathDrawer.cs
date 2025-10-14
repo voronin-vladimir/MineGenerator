@@ -92,7 +92,7 @@ public class PathDrawer
             case PathDirection.Left | PathDirection.Up:
                 return (_corner, Quaternion.Euler(0, 0, 90));
 
-            // T-образные (если ты решишь добавить)
+            // T-образные
             case PathDirection.Up | PathDirection.Left | PathDirection.Right:
                 return (_tee, Quaternion.identity);
             case PathDirection.Right | PathDirection.Up | PathDirection.Down:
